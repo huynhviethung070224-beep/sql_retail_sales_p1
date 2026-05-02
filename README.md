@@ -6,7 +6,9 @@
 **Level**: Beginner  
 **Database**: `p1_retail_db`
 
-This project is designed to demonstrate SQL skills and techniques typically used by data analysts to explore, clean, and analyze retail sales data. The project involves setting up a retail sales database, performing exploratory data analysis (EDA), and answering specific business questions through SQL queries. This project is ideal for those who are starting their journey in data analysis and want to build a solid foundation in SQL.
+This project focuses on practicing SQL by working with a retail sales dataset in PostgreSQL. I created the database, cleaned the data, and explored it to better understand customer behavior and sales patterns.
+
+Through this project, I used SQL to answer real business questions such as identifying top customers, analyzing sales by category, and finding trends across different months. The goal was to build a strong foundation in SQL and understand how data can be used to support simple business decisions.
 
 ## Objectives
 
@@ -211,17 +213,14 @@ This project serves as a comprehensive introduction to SQL for data analysts, co
 3. **Run the Queries**: Use the SQL queries provided in the `analysis_queries.sql` file to perform your analysis.
 4. **Explore and Modify**: Feel free to modify the queries to explore different aspects of the dataset or answer additional business questions.
 
-## Author - Zero Analyst
+## Author - Viet Hung Huynh
 
-This project is part of my portfolio, showcasing the SQL skills essential for data analyst roles. If you have any questions, feedback, or would like to collaborate, feel free to get in touch!
+This project was inspired by a YouTube tutorial. I rebuilt it myself, practiced the SQL queries, and added my own explanations and insights.
 
-### Stay Updated and Join the Community
+### Stay Updated and Connect with Me
 
-For more content on SQL, data analysis, and other data-related topics, make sure to follow me on social media and join our community:
-
-- **YouTube**: [Subscribe to my channel for tutorials and insights](https://www.youtube.com/@zero_analyst)
-- **Instagram**: [Follow me for daily tips and updates](https://www.instagram.com/zero_analyst/)
-- **LinkedIn**: [Connect with me professionally](https://www.linkedin.com/in/najirr)
-- **Discord**: [Join our community to learn and grow together](https://discord.gg/36h5f2Z5PK)
+- **Instagram**: [Connect with me on instagram](https://www.instagram.com/lokian__07/)
+- **LinkedIn**: [Connect with me professionally on LinkedIn](https://www.linkedin.com/in/viethunghuynh07/)
+- **Discord**: [Contact me on Discord](https://discord.com/users/574211007417679873)
 
 Thank you for your support, and I look forward to connecting with you!
