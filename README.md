@@ -10,6 +10,18 @@ This project focuses on practicing SQL by working with a retail sales dataset in
 
 Through this project, I used SQL to answer real business questions such as identifying top customers, analyzing sales by category, and finding trends across different months. The goal was to build a strong foundation in SQL and understand how data can be used to support simple business decisions.
 
+## Skills Used
+
+- PostgreSQL
+- Database creation
+- Data cleaning
+- Exploratory data analysis
+- Aggregate functions
+- Filtering with WHERE
+- GROUP BY and ORDER BY
+- Window functions
+- Common Table Expressions (CTEs)
+
 ## Objectives
 
 1. **Set up a retail sales database**: Create and populate a retail sales database with the provided sales data.
@@ -79,7 +91,7 @@ FROM retail_sales
 WHERE sale_date = '2022-11-05';
 ```
 
-2. **Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022**:
+2. **Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is at least 4 in the month of Nov-2022**:
 ```sql
 SELECT 
   *
@@ -89,7 +101,7 @@ WHERE
     AND 
     TO_CHAR(sale_date, 'YYYY-MM') = '2022-11'
     AND
-    quantity >= 4
+    quantity >= 4;
 ```
 
 3. **Write a SQL query to calculate the total sales (total_sale) for each category.**:
@@ -99,7 +111,7 @@ SELECT
     SUM(total_sale) as net_sale,
     COUNT(*) as total_orders
 FROM retail_sales
-GROUP BY 1
+GROUP BY 1;
 ```
 
 4. **Write a SQL query to find the average age of customers who purchased items from the 'Beauty' category.**:
@@ -107,13 +119,13 @@ GROUP BY 1
 SELECT
     ROUND(AVG(age), 2) as avg_age
 FROM retail_sales
-WHERE category = 'Beauty'
+WHERE category = 'Beauty';
 ```
 
 5. **Write a SQL query to find all transactions where the total_sale is greater than 1000.**:
 ```sql
 SELECT * FROM retail_sales
-WHERE total_sale > 1000
+WHERE total_sale > 1000;
 ```
 
 6. **Write a SQL query to find the total number of transactions (transaction_id) made by each gender in each category.**:
@@ -127,7 +139,7 @@ GROUP
     BY 
     category,
     gender
-ORDER BY 1
+ORDER BY 1;
 ```
 
 7. **Write a SQL query to calculate the average sale for each month. Find out best selling month in each year**:
@@ -146,7 +158,7 @@ SELECT
 FROM retail_sales
 GROUP BY 1, 2
 ) as t1
-WHERE rank = 1
+WHERE rank = 1;
 ```
 
 8. **Write a SQL query to find the top 5 customers based on the highest total sales **:
@@ -157,7 +169,7 @@ SELECT
 FROM retail_sales
 GROUP BY 1
 ORDER BY 2 DESC
-LIMIT 5
+LIMIT 5;
 ```
 
 9. **Write a SQL query to find the number of unique customers who purchased items from each category.**:
@@ -166,7 +178,7 @@ SELECT
     category,    
     COUNT(DISTINCT customer_id) as cnt_unique_cs
 FROM retail_sales
-GROUP BY category
+GROUP BY category;
 ```
 
 10. **Write a SQL query to create each shift and number of orders (Example Morning <12, Afternoon Between 12 & 17, Evening >17)**:
@@ -186,7 +198,7 @@ SELECT
     shift,
     COUNT(*) as total_orders    
 FROM hourly_sale
-GROUP BY shift
+GROUP BY shift;
 ```
 
 ## Findings
@@ -208,10 +220,13 @@ This project serves as a comprehensive introduction to SQL for data analysts, co
 
 ## How to Use
 
-1. **Clone the Repository**: Clone this project repository from GitHub.
-2. **Set Up the Database**: Run the SQL scripts provided in the `database_setup.sql` file to create and populate the database.
-3. **Run the Queries**: Use the SQL queries provided in the `analysis_queries.sql` file to perform your analysis.
-4. **Explore and Modify**: Feel free to modify the queries to explore different aspects of the dataset or answer additional business questions.
+1. **Clone the Repository**: Clone or download this repository from GitHub.
+2. **Open PostgreSQL or pgAdmin**: Use PostgreSQL, pgAdmin, or another SQL tool that supports PostgreSQL.
+3. **Create the Database**: Create a new database named `p1_retail_db`.
+4. **Create the Table**: Open `sql_query_p1.sql` and run the table creation section first.
+5. **Import the Dataset**: Import the dataset from `SQL - Retail Sales Analysis_utf .csv` into the `retail_sales` table.
+6. **Run the Queries**: Continue running the remaining queries in `sql_query_p1.sql` to clean the data and perform the analysis.
+7. **Explore and Modify**: Modify the queries if you want to explore more business questions from the dataset.
 
 ## Author - Viet Hung Huynh
 
@@ -223,4 +238,4 @@ This project was inspired by a YouTube tutorial. I rebuilt it myself, practiced 
 - **LinkedIn**: [Connect with me professionally on LinkedIn](https://www.linkedin.com/in/viethunghuynh07/)
 - **Discord**: [Contact me on Discord](https://discord.com/users/574211007417679873)
 
-Thank you for your support, and I look forward to connecting with you!
+Thank you for reviewing my project. I am continuing to build my SQL and data analysis skills through hands-on projects.
