@@ -84,7 +84,7 @@ WHERE
 
 The following SQL queries were developed to answer specific business questions:
 
-1. **Write a SQL query to retrieve all columns for sales made on '2022-11-05**:
+1. **Write a SQL query to retrieve all columns for sales made on '2022-11-05'**:
 ```sql
 SELECT *
 FROM retail_sales
@@ -161,7 +161,7 @@ GROUP BY 1, 2
 WHERE rank = 1;
 ```
 
-8. **Write a SQL query to find the top 5 customers based on the highest total sales **:
+8. **Write a SQL query to find the top 5 customers based on the highest total sales**:
 ```sql
 SELECT 
     customer_id,
@@ -172,7 +172,7 @@ ORDER BY 2 DESC
 LIMIT 5;
 ```
 
-9. **Write a SQL query to find the number of unique customers who purchased items from each category.**:
+9. **Write a SQL query to find the number of unique customers who purchased items from each category**:
 ```sql
 SELECT 
     category,    
@@ -208,11 +208,13 @@ GROUP BY shift;
 - **Sales Trends**: Monthly analysis shows variations in sales, helping identify peak seasons.
 - **Customer Insights**: The analysis identifies the top-spending customers and the most popular product categories.
 
-## Reports
+## Possible Reports
 
-- **Sales Summary**: A detailed report summarizing total sales, customer demographics, and category performance.
-- **Trend Analysis**: Insights into sales trends across different months and shifts.
-- **Customer Insights**: Reports on top customers and unique customer counts per category.
+Based on this analysis, the SQL queries could be used to create:
+- A sales summary report by category
+- A customer spending report
+- A monthly sales trend report
+- A shift-based order report
 
 ## Conclusion
 
